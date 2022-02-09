@@ -7,7 +7,7 @@ Using R to develop a statistical analysis reviewing production data that assists
 ### Is the slope of the linear model considered to be zero? Why or why not?</br>
 - The p-Value for this model, p-Value: 5.35e-11, is much smaller than the assumed significance level of 0.05%. This indicates there is sufficient evidence to reject our null hypothesis, which further indcates that the slope of this linear model is not zero.
 ### Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?</br>
-- This linear model has an r-squared value of 0.7149, which means that approximately 71% of all mpg predictions will be determined by this model. Relatively speaking, his multiple regression model does predict mpg of MechaCar prototypes effectively.</br></br>
+- This linear model has an r-squared value of 0.7149, which means that approximately 71% of all mpg predictions will be determined by this model. Relatively speaking, this multiple regression model does predict mpg of MechaCar prototypes effectively.</br></br>
 ![MPG Regression](/Images/MPG_Regression.png)
 
 ## Summary Statistics on Suspension Coils</br>
@@ -17,19 +17,22 @@ Using R to develop a statistical analysis reviewing production data that assists
 - Similarly, but significantly more consistent, Lot 1 and Lot 2 are well within the 100 PSI variance requirement; with variances of 0.98 and 7.47 respectively. However, it is Lot 3 that is showing much larger variance in performance and consistency, with a variance of 170.29. It is Lot 3 that is disproportionately causing the variance at the full lot level.</br></br>
 ![Lot Summary](/Images/lot_summary.png)</br>
 
-## T-Tests on Suspension Coils</br></br>
+## T-Tests on Suspension Coils</br>
 
 ## LOT 1</br>
-![Lot 1 T-Test](/Images/Lot1_t-test.png)</br>
-- Lot 1 sample actually has the true sample mean of 1500, again as we saw in the summary statistics above. With a p-Value of 1, clearly we cannot reject (i.e. accept) the null hypothesis that there is no statistical difference between the observed sample mean and the presumed population mean (1500).</br></br>
+
+- Lot 1 sample actually has the true sample mean of 1500, again as we saw in the summary statistics above. With a p-Value of 1, clearly we cannot reject (i.e. accept) the null hypothesis that there is no statistical difference between the observed sample mean and the presumed population mean (1500).
+![Lot 1 T-Test](/Images/Lot1_t-test.png)</br></br>
 
 ## LOT 2</br>
-![Lot 2 T-Test](/Images/Lot2_t-test.png)</br>
-- Lot 2 has essentially the same outcome with a sample mean of 1500.2, a p-Value of 0.61; the null hypothesis cannot be rejected, and the sample mean and the population mean of 1500 are statistically similar.</br></br>
+
+- Lot 2 has essentially the same outcome with a sample mean of 1500.2, a p-Value of 0.61; the null hypothesis cannot be rejected, and the sample mean and the population mean of 1500 are statistically similar.
+![Lot 2 T-Test](/Images/Lot2_t-test.png)</br></br>
 
 ## LOT 3
-![Lot 3 T-Test](/Images/Lot3_t-test.png)</br>
-- However, Lot 3, not surprisingly is a different scenario. Here the sample mean is 1496.14 and the p-Value is 0.04, which is lower than the common significance level of 0.05. All indicating to reject the null hypothesis that this sample mean and the presumed population mean are not statistically different.</br></br>
+
+- However, Lot 3, not surprisingly is a different scenario. Here the sample mean is 1496.14 and the p-Value is 0.04, which is lower than the common significance level of 0.05. All indicating to reject the null hypothesis that this sample mean and the presumed population mean are not statistically different.
+![Lot 3 T-Test](/Images/Lot3_t-test.png)</br></br>
 
 ## Study Design: MechaCar vs Competition
 ### The statistical study design has the following:
@@ -59,7 +62,7 @@ Using R to develop a statistical analysis reviewing production data that assists
 </br></br>
 
 ### Hypothesis: Null and Alternative
-After determining which factors are key for the MechaCar's genre:
+#### After determining which factors are key for the MechaCar's genre:
 
 - Null Hypothesis (Ho): MechaCar is priced correctly based on its performance of key factors for its genre.
 - Alternative Hypothesis (Ha): MechaCar is NOT priced correctly based on performance of key factors for its genre.
